@@ -15,5 +15,12 @@ public class Main {
         stack.pop(); //will remove name
         stack.pop(); //will remove my
         System.out.println("----------------");
+
+        System.out.println("QUEUE");
+        Queue queue = new Queue();
+        queue.enqueue("my");
+        queue.enqueue("name");
+        queue.enqueue("is");
+        queue.enqueue("ashvini");
     }
 }
