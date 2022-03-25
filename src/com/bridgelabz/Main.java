@@ -22,5 +22,10 @@ public class Main {
         queue.enqueue("name");
         queue.enqueue("is");
         queue.enqueue("ashvini");
+
+        queue.dequeue();
+        queue.dequeue();
+        queue.dequeue();
+
     }
 }
