@@ -8,4 +8,8 @@ public class Stack {
     public void push(String data) {
         list.addFirst((String) data);
     }
+    // Pop : Deleting elements
+    public void pop() {
+        list.deleteFirst();
+    }
 }

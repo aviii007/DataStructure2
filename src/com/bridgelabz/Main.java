@@ -11,5 +11,9 @@ public class Main {
         stack.push("name");
         stack.push("my");
 
+        stack.pop(); //will remove is
+        stack.pop(); //will remove name
+        stack.pop(); //will remove my
+        System.out.println("----------------");
     }
 }
