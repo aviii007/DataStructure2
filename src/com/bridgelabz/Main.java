@@ -10,10 +10,14 @@ public class Main {
         stack.push("is");
         stack.push("name");
         stack.push("my");
+        stack.showElements();
 
         stack.pop(); //will remove is
+        stack.showElements();
         stack.pop(); //will remove name
+        stack.showElements();
         stack.pop(); //will remove my
+        stack.showElements();
         System.out.println("----------------");
 
         System.out.println("QUEUE");
@@ -22,10 +26,13 @@ public class Main {
         queue.enqueue("name");
         queue.enqueue("is");
         queue.enqueue("ashvini");
+        queue.showElements();
 
         queue.dequeue();
+        queue.showElements();
         queue.dequeue();
+        queue.showElements();
         queue.dequeue();
-
+        queue.showElements();
     }
 }
