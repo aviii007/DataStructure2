@@ -1,21 +1,20 @@
 package com.bridgelabz;
 
-public class LinkedList {
+public class LinkedList<T> {
     Node head; //creating the head node
     public int size;
 
 
-    //constructor of class
     LinkedList(){
         this.size = 0;  //initializing the size as zero
     }
     //Node class
-    public class Node{
-        String data;
+    public class Node<T>{
+        T data;
         Node next;
 
         //Constructor
-        Node(String data){
+        Node(T data){
             this.data = data;
             this.next = null; //for every new node its next will be null by default
             size++;  //do size++ when creating the new node
@@ -23,19 +22,19 @@ public class LinkedList {
     }
 
     //add-first
-    public void addFirst(String data){  //function is addFirst and String Data is parameter
+    public void addFirst(T data){  //function is addFirst and String data is parameter
         Node newNode = new Node(data);  //creating node
         if (head == null){
             head = newNode; //assign new node value to head
             return;
         }
 
-        newNode.next = head; //new node will point head
+        newNode.next = head; //new nodes next will point head
         head = newNode; //head value will become new node
     }
 
     //add-last
-    public void addLast(String data) {
+    public void addLast(T data) {
         Node newNode = new Node(data);
         if (head == null) {
             head = newNode;
@@ -43,7 +42,7 @@ public class LinkedList {
         }
 
         Node currNode = head;
-        while(currNode.next != null){ //travel untill current node's next become null
+        while(currNode.next != null) { //travel untill current node's next become null
             currNode = currNode.next;
         }
 
@@ -100,7 +99,6 @@ public class LinkedList {
     }
 
     public int getSize(){  //function to return the size
-
         return  size;
     }
 
