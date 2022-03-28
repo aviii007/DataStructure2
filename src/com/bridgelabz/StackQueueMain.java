@@ -1,6 +1,6 @@
 package com.bridgelabz;
 
-public class Main {
+public class StackQueueMain {
 
     public static void main(String[] args) {
         System.out.println("Welcome to Stacks and Queues Program");
@@ -12,11 +12,11 @@ public class Main {
         stack.push("my");
         stack.showElements();
 
-        stack.pop(); //will remove is
+        stack.pop();
         stack.showElements();
-        stack.pop(); //will remove name
+        stack.pop();
         stack.showElements();
-        stack.pop(); //will remove my
+        stack.pop();
         stack.showElements();
         System.out.println("----------------");
 

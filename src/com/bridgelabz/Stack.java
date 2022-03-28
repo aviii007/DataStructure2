@@ -1,12 +1,12 @@
 package com.bridgelabz;
 
-public class Stack {
+public class Stack<T> {
     // LIFO
     LinkedList list = new LinkedList();
 
     // Push : Adding elements
-    public void push(String data) {
-        list.addFirst((String) data);
+    public void push(T data) {
+        list.addFirst((T) data);
     }
 
     // Pop : Deleting elements
